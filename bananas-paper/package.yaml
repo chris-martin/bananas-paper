@@ -1,6 +1,6 @@
-name: foo
+name: bananas-paper
 version: 0.0.0.1
-github: chris-martin/foo
+github: chris-martin/bananas-paper
 
 synopsis: |
   ...
@@ -22,7 +22,7 @@ ghc-options:
 library:
   source-dirs: src
   exposed-modules:
-    - Foo
+    - Bananas
 
 dependencies:
   - base
@@ -35,14 +35,5 @@ tests:
     ghc-options:
       - -threaded
     dependencies:
-      - foo
+      - bananas-paper
       - doctest
-
-  hedgehog:
-    source-dirs: test
-    main: hedgehog.hs
-    ghc-options:
-      - -threaded
-    dependencies:
-      - foo
-      - hedgehog
